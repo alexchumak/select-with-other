@@ -1,12 +1,12 @@
-jquery-bootstrap-select-with-other
-==================================
+Select with "Other"
+===================
 
 Select tag using radio buttons, with provision for typing in custom "Other" value.
 
 Example
 -------
 
-![select with other option example](https://raw.githubusercontent.com/alexchumak/jquery-bootstrap-select-with-other/master/example.png)
+![select with other option example](https://raw.githubusercontent.com/alexchumak/select-with-other/master/example.png)
 
 Requirements
 ------------
@@ -20,7 +20,13 @@ Installation
 
 ### HTML Markup
 
-Start with the following frame and then modify / style to your liking. It might not break.
+In the `HEAD` of your HTML document:
+
+    <script src="src/select-with-other.min.js"></script>
+
+Within a `FORM` use following frame and then modify / style to your liking. It might not break.
+
+Change `phone_label` name attribute's value to the desired name in your form field.
 
     <div class="btn-group">
       <button aria-expanded="false" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
@@ -67,6 +73,11 @@ Start with the following frame and then modify / style to your liking. It might 
 ### Javascript
 
     $(function () { $('.btn-group').selectwithother(); })
+
+Help
+----
+
+Create an issue if you need any assistance. Create pull requests to contribute. Please do.
 
 License
 -------
