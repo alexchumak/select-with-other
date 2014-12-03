@@ -20,9 +20,19 @@ Installation
 
 ### HTML Markup
 
-In the `HEAD` of your HTML document:
+#### Any project
+
+In the `HEAD` of your HTML document add the following
 
     <script src="src/select-with-other.min.js"></script>
+
+#### Rails project
+
+If you are installing the gem version of this plugin you need to add this to your application.js file:
+
+    //= require select-with-other
+
+#### HTML
 
 Within a `FORM` use following frame and then modify / style to your liking. It might not break.
 
@@ -73,6 +83,10 @@ Change `phone_label` name attribute's value to the desired name in your form fie
 ### Javascript
 
     $(function () { $('.btn-group').selectwithother(); })
+
+Coffeescript variation
+
+    $(-> $('.btn-group').selectwithother())
 
 Help
 ----
